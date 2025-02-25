@@ -31,7 +31,7 @@ export default function App() {
             ...prevContact,
             isFavorite: !prevContact.isFavorite
         }));
-        console.log(contact)
+        console.log('abo')
     }
 
     return (
