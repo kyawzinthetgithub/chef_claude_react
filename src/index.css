@@ -1,0 +1,139 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", serif;
+}
+
+.headerSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+}
+
+.headerSection header{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.headerSection header img{
+  width: 40px;
+}
+
+.headerSection header h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+main{
+  padding: 30px 30px 10px;
+}
+
+.add-ingredient-form{
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-ingredient-form > input{
+  min-width: 150px;
+  max-width: 500px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 9px 13px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  color: #2c2c2c;
+  flex-grow: 1;
+}
+
+.add-ingredient-form > input:focus{
+  outline: none;
+  border: 1px solid #327b86;
+}
+
+.add-ingredient-form > button{
+  width: 200px;
+  max-height: 38px;
+  background-color: #141413;
+  color: #fafaf8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 9px 13px;
+  cursor: pointer;
+}
+
+.add-ingredient-form button::before{
+  content: "+";
+  margin-right: 10px;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C4A6E;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.card .avatar {
+    width: 100%;
+    padding: 10%;
+    padding-bottom: 0;
+}
+
+.card .name {
+    margin-block: 13px;
+    color: #333333;
+}
+
+.card .info {
+    padding: 10px;
+}
+
+.card .favorite {
+    width: 25px;
+    cursor: pointer;
+}
+
+.card .contact {
+    font-size: 0.75rem;
+    color: gray;
+    margin-block: 7px;
+}
+
+.card .favorite-button {
+    border: none;
+    background: transparent;
+}
+
+.card .favorite-button:active {
+    transform: none;
+    box-shadow: none;
+}
