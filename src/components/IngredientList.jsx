@@ -1,4 +1,4 @@
-export default function IngredientList ({ingredients,getRecipe}){
+export default function IngredientList ({ingredients,getRecipe,ref}){
     return (
         <>
             <section>
@@ -9,7 +9,7 @@ export default function IngredientList ({ingredients,getRecipe}){
               ))}
             </ul>
             {ingredients.length > 3 && (
-              <div className="get-recipe-container">
+              <div ref={ref} className="get-recipe-container">
                 <div>
                   <h3>Ready for recipe</h3>
                 </div>
